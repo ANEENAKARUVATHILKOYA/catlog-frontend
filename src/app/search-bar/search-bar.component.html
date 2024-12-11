@@ -1,0 +1,7 @@
+<input type="text"  placeholder="Search"   (input)="searchText.emit(($event.target as HTMLInputElement)?.value || '')">
+<select (change)="filterCriteria.emit(($event.target as HTMLSelectElement)?.value || '')">
+
+    <option value="price">Price</option>
+    <option value="rating">Rating</option>
+    <option value="'Category">Category</option>
+</select>
